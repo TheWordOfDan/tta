@@ -1,0 +1,510 @@
+/*
+
+tta_style.css
+by Dan
+
+*/
+
+#gameBoard{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+
+#card_row{
+  position: absolute;
+  left: -15px;
+  top: -135px;
+  width: 806px;
+  height: 105px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  background-color: beige;
+}
+  
+  .card{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 80px;
+    width: 60px;
+    font-size: 10px;
+    display:inline-block;
+    vertical-align:top;
+    box-shadow: 2px 2px 2px;
+    text-align:center;
+  }
+
+  .drafted_card{
+    opacity:0.25;
+    font-color:gray;
+    border:1px dotted gray;
+  }
+  
+  .grayed_out{
+    color:gray;
+  }
+
+  .stand_out{
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px;
+  }
+
+  .yellow{
+    background-color:yellow;
+    background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #EFDF00 100%);
+    background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #EFDF00 100%);
+    background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #EFDF00 100%);
+  }
+
+  .wonder{
+    background-color:violet;
+    background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #EF00E7 100%);
+    background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #EF00E7 100%);
+    background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #EF00E7 100%);
+  }
+
+  .leader{
+    background-color:lime;
+    background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #08EF00 100%);
+    background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #08EF00 100%);
+    background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #08EF00 100%);
+
+  }
+
+  .action_cost_div{
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:inline-block;
+    position:relative;
+    height:10px;
+  }
+
+  #action_cost_div1{
+    width: 310px;
+  }
+
+    #cost_container1{
+      left: 144px;  
+      width: 22px;
+    }
+
+    .action_cost_container{
+      position:absolute;
+      height: 18px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px;
+      background-color:beige;
+      top: 3px;
+    }
+      
+      .card_row_token{
+        margin:0px;
+        height:10px;
+        width:10px;
+        border:1px solid;
+        box-shadow:2px 2px 2px;
+        display:inline-block;
+        background-color:white;
+        border-radius:10px;
+      }
+      
+      .anchor{
+        margin-left:4px;
+      }
+    
+  #action_cost_div2{
+    width: 248px;
+  }
+
+    #cost_container2{
+      left: 107px;
+      width: 34px;
+    }
+
+  #action_cost_div3{
+    width: 248px;
+  }
+
+    #cost_container3{
+      left: 101px;
+      width: 46px;
+    }
+
+#gameStatePane{
+  height: 600px;
+  width: 600px;
+  display: inline-block;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+  
+  
+  #client_pane{
+
+  }
+
+    #client_pane div{
+      display:inline-block;
+    }
+  
+    #client_pane button{
+
+    }
+
+    .client{
+      font-size:20px;
+    }
+
+    .current_player{
+      font-size:12px;
+    }
+
+  #stats{
+    font-size:12px;
+  }
+
+    #stats div{
+
+    }
+
+  .tech_card{
+    display: inline-block;
+    height: 105px;
+    width: 75px;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+
+    .pop_token{
+      height: 10px;
+      width: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: yellow;
+      display: inline-block;
+      box-shadow: 2px 2px 2px;
+    }
+
+    .unhappy{
+      background-color:orange;
+    }
+
+      .ui-draggable{
+        cursor: -webkit-grab;
+      }
+
+    .blue_token{
+      height: 10px;
+      width: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: blue;
+      display:inline-block;
+      box-shadow: 2px 2px 2px;
+    }
+  
+    .farmOrMine{
+      background-color:brown;
+      background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #964B00 100%);
+      background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #964B00 100%);
+      background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #964B00 100%);
+    }
+
+    .building{
+      background-color:gray;
+      background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #808080 100%);
+      background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #808080 100%);
+      background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #808080 100%);
+    }
+
+    .military{
+      background-color:red;
+      background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #FF0000 100%);
+      background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #FF0000 100%);
+      background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #FF0000 100%);
+    }
+
+  #pop_bank{
+    height:50px;
+    width:260px;
+    border:1px solid black;
+    border-radius:5px;
+  }
+    
+    .pop_bank_2x2{
+      position:relative;
+      height:50px;
+      width:50px;
+      border:1px solid black;
+      display:inline-block;
+    }
+      
+      .slot1{
+        position:absolute;
+        left: 6px;
+        top: 31px;
+      }
+
+      .slot2{
+        position:absolute;
+        left: 6px;
+        top: 6px;
+      }
+
+      .slot3{
+        position:absolute;
+        left: 31px;
+        top: 31px;
+      }
+
+      .slot4{
+        position:absolute;
+        left: 31px;
+        top: 6px;
+      }
+    
+      .pop_bank_slot{
+        height:10px;
+        width:10px;
+        border-radius: 5px;
+      }
+
+  #worker_pool{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #blue_bank{
+    height:50px;
+    width:256px;
+    border:1px solid black;
+    border-radius:5px;
+  }
+    
+    .firstDiv{
+      border-right:none;
+    }
+
+    .secondDiv{
+      border-left:none;
+      border-right:none;
+    }
+
+    .thirdDiv{
+      border-left:none;
+    }
+
+  #govt_card{
+    background-color: orange;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+    .white_token{
+      height:10px;
+      width:10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: white;
+      margin: 1px;
+      display:inline-block;
+      box-shadow: 2px 2px 2px;
+    }
+
+    .used_white_token{
+      border: 1px solid rgba(153, 153, 153, 0.8);
+      box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.8);
+    }
+
+    .red_token{
+      height:10px;
+      width:10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: red;
+      margin: 1px;
+      display:inline-block;
+      box-shadow: 2px 2px 2px;
+    }
+
+    .used_red_action{
+      border: 1px solid rgba(153, 153, 153, 0.8);
+      box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.8);
+      background-color: rgba(255, 0, 0, 0.8);
+    }
+
+  #civil_hand{
+
+  }
+
+    .drafted_this_turn{
+      font-style:italic;
+    }
+
+  #wonders_list{
+    width: 125px;
+    position:absolute;
+    top:0px;
+    left: 500px;
+  }
+    
+    .wonder_tile{
+      background-color:violet;
+      border:1px solid;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px;
+      text-align:center;
+    }
+
+      .wonder_tile div{
+        display:inline-block;
+        font-size:12px;
+        margin-right:4px; 
+      }
+
+  #leader_tile{
+    background-color:lime;
+  } 
+
+#playerPane{
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+#chatPane{
+  border: 1px solid black;
+  height: 500px;
+  width: 200px;
+  display: inline-block;
+  position: absolute;
+  top: 145px;
+  left: 800px;
+  box-shadow: 5px 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  overflow:auto;
+  background-color:beige;
+}
+
+  .system_message{
+    font-style:italic;
+  }
+    
+    .system_message_username{
+      font-weight:bold;  
+    }
+
+    .action_failure{
+      color:red;
+    }
+
+#military_hand{
+
+}
+
+  .event, .territory{
+    background-color:green;    
+    background-image: -webkit-linear-gradient(bottom right, #FFFFFF 0%, #008000 100%);
+    background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #008000 100%);
+    background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #008000 100%);
+  }
+
+#overlay_bg{
+  height:100%;
+  width:100%;
+  background-color: rgba(255,255,255,0.8);
+  left: 0px;
+  top: 0px;
+  position:absolute;
+}
+
+  .overlay_container{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    padding:7px;
+    border:1px solid black;
+    border-radius:5px;
+    box-shadow: 0 0 10px;
+    width:300px;
+    height:400px;
+  }
+
+  .overlay_container .tech_tile{
+    border:1px solid;
+    border-radius:5px;
+    box-shadow:2px 2px 2px;
+    width:150px;
+    height:20px;
+    margin:auto;
+    text-align:center;
+    font-size:12px;
+    margin-bottom:3px;
+  }
+
+  .instructions{
+    font-size:12px;
+    font-style:italic;
+  }
+
+  .overlay_container .stand_out{
+    width:165px;
+    height:22px;
+  }
+
+  .overlay_container .confirmation{
+    margin-top:20px;
+    text-align:center;
+  }
+
+#political_pane{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  padding:7px;
+  border:1px solid black;
+  border-radius:5px;
+  box-shadow: 0 0 10px;
+  width:600px;
+  height:450px;
+  background-color: aliceblue;
+  background-image: -webkit-linear-gradient(bottom right, #FFFFFF 0%, #00A3EF 100%);
+  background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #00A3EF 100%);
+  background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #00A3EF 100%);
+}
+
+  #mini_game{
+    width: 300px;
+    margin: auto;
+    font-size:12px;
+  }
+    
+    #mini_game_history{
+      font-style:italic;
+    }
+
+    #mini_game_state{
+      font-weight:bold;
+    }
+
+

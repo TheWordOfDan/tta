@@ -1,0 +1,124 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.overlay_bg{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.container{
+  position:relative;
+  border:1px solid black;
+  border-radius: 4px;
+}
+
+#login_screen_bg{
+  background-color:white;
+}
+
+#login_screen_container{
+  top:15%;
+  left:50%;
+  width:40%;
+  height:25%;
+  padding:1%;
+  margin: 0 0 0 -21%;
+}
+
+#lobby{
+  width:100%;
+  height:100%;
+}
+
+#top_bar{
+  width:95%;
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+.column{
+  float:left;
+  display:inline-block;
+  height: 85%;
+}
+
+#user_list{
+  width:19%;
+}
+
+#chat_column{
+  width:60%;
+}
+
+#chat{
+  overflow:auto;
+  border:1px solid black;  
+  border-radius:5px;
+  height:95%;
+}
+
+#chat p{
+  margin: 5px;
+}
+
+#chat_text{
+  width: 96%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#game_list{
+  width:19%;
+}
+
+.userCard{
+  width:100%;
+  height: 25px;
+  border: 1px solid black;
+  text-align:center;
+}
+
+.current_user{
+  background-color:yellow;
+  font-weight:bold;
+}
+
+.gameCard{
+  height: 25px;
+  border: 1px solid black;
+}
+
+.system_message{
+  font-style: italic;
+}
+
+.game_settings_container{
+  top:15%;
+  left:50%;
+  width:40%;
+  height:40%;
+  padding: 1%;
+  margin:0 0 0 -21%;
+  background-color:aqua;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.ready{
+  font-weight:bold;
+  color:green;
+}
+
+.game_panel{
+  position:relative;
+  width:200px;
+  height:100px;
+  border:1px solid black;
+  border-radius:5px;
+  background-color:red;
+}

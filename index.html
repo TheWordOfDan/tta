@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>I think this line's mostly filler...</title>
+    <link rel = "stylesheet" href = "style.css"></link>
+    <link rel = "stylesheet" href = "tta_style.css"></link>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src = "http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  </head>
+  <body id = "body">
+
+    <div id ="login_screen_bg" class = "overlay_bg">
+      <div id = "login_screen_container" class = "container">
+        <h1>Login</h1>
+        <input type = "text" value = "username" id = "usernameIn" />
+        <button id = "connectButton">Connect!</button>
+      </div>
+    </div>
+
+    <div id = "lobby">
+      <div id = "top_bar"></div>
+      <div id = "user_list" class = "column"></div>
+      <div id = "chat_column" class = "column">
+        <div id = "chat"></div>
+        <div id = "text"></div>
+      </div>
+      <div id = "game_list" class = "column"></div>
+    </div>
+
+    <script src = "lobby_client.js"></script>
+    <script src = "tta_client.js"></script>
+  </body>
+</html>
